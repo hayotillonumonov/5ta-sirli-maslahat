@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
@@ -37,8 +37,6 @@ body {
 
 /*==> /Main styles <==*/
 
-
-
 /*==> Life hack section styles start <==*/
 
 .life-hack-section {
@@ -46,7 +44,7 @@ body {
   position: relative;
   width: 1440px;
   height: 961px;
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/bg.jpg");
   overflow: hidden;
 }
 
@@ -72,21 +70,21 @@ body {
 
 .life-hack-section_info h1 span {
   color: #fff;
-  background: #3CB27F;
+  background: #3cb27f;
   padding: 0 10px;
   border-radius: 18px;
 }
 
 .life-hack-section_info .paragaph-1 {
   margin-bottom: 30px;
-  color: #48635B;
+  color: #48635b;
   font-size: 24px;
   font-weight: 400;
   line-height: 132%;
 }
 
 .life-hack-section_info .paragaph-1 span {
-  color: #48635B;
+  color: #48635b;
   font-size: 24px;
   line-height: 132%;
 }
@@ -100,23 +98,23 @@ body {
 }
 
 .life-hack-section_info .paragaph-2 span {
-  color: #3CB27F;
+  color: #3cb27f;
   font-size: 32px;
   line-height: 132%;
 }
 
-.life-hack-section_info button{
+.btn {
   width: 343px;
   height: 60px;
   margin-bottom: 75px;
-  color: #FFF;
-  background: #FB4545;
+  color: #fff;
+  background: #fb4545;
   font-size: 17px;
   line-height: 132%;
   text-transform: uppercase;
   border: none;
   border-radius: 12px;
-  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .life-hack_left-side-wrapper img {
@@ -140,19 +138,19 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  background: #FFF;
-  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.10);
+  background: #fff;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .statistics-item h2 {
-  color: #193C3F;
+  color: #193c3f;
   font-size: 30px;
   font-weight: 600;
   line-height: 132%;
 }
 
 .statistics-item p {
-  color: rgba(25, 60, 63, 0.50);
+  color: rgba(25, 60, 63, 0.5);
   font-size: 16px;
   font-weight: 400;
   line-height: 132%;
@@ -177,4 +175,103 @@ body {
   position: absolute;
   top: 283px;
   right: 306px;
+}
+
+/* ==>Modal styles<== */
+.modal-wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+
+.modal {
+  width: 935px;
+  height: 458px;
+  border-radius: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 427px;
+  height: 458px;
+  display: flex;
+  justify-content: center;
+  padding: 0 45px;
+  align-items: center;
+  border-radius: 18px 0px 0px 18px;
+  background: rgb(0, 206, 169);
+  background: linear-gradient(90deg,rgba(0, 206, 169, 0.18) 0%,rgba(0, 83, 206, 0.24) 100%);
+}
+
+.right-side {
+  padding: 40px;
+}
+
+.right-side h1 {
+  font-size: 30px;
+  line-height: 132%;
+  margin-bottom: 12px;
+}
+
+.right-side h1 span {
+  color: #3CB27F;
+}
+
+.right-side > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.right-side > p span{
+  color: #3CB27F;
+  font-weight: 600;
+}
+
+form p {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+input {
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  width: 428px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #BED4DA;
+  background: #F3F7F8;
+}
+
+input::placeholder {
+  color: #BFD2CC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+input[type="number"] {
+  padding-left: 78px;
+}
+
+.number-input {
+  position: relative;
+}
+
+.conty-code {
+  position: absolute;
+  bottom: -13px;
+  right: 366px;
+}
+
+.modal-btn {
+  width: 428px;
+  height: 48px;
+  margin-bottom: 24px;
 }
