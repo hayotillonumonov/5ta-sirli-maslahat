@@ -28,6 +28,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  position: relative;
 }
 
 .container {
@@ -44,6 +45,11 @@ body {
   border: none;
   border-radius: 12px;
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #a12c2c;
 }
 
 /*==> /Main styles <==*/
@@ -52,12 +58,12 @@ body {
 
 .life-hack-section {
   margin: 0 auto;
-  position: relative;
   max-width: 1440px;
-  height: 100vh;
+  height: 931px;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -103,7 +109,7 @@ body {
 .life-hack-section_info .paragaph-1 span {
   color: #48635b;
   font-size: 24px;
-  line-height: 132%;
+  font-weight: 600;
 }
 
 .life-hack-section_info .paragaph-2 {
@@ -117,7 +123,7 @@ body {
 .life-hack-section_info .paragaph-2 span {
   color: #3cb27f;
   font-size: 32px;
-  line-height: 132%;
+  font-weight: 600;
 }
 
 .main-btn {
@@ -170,10 +176,6 @@ body {
   position: relative;
 }
 
-.life-hack_right-side {
-  /* float: right; */
-}
-
 .banner-img-man {
   width: 828px;
   position: absolute;
@@ -188,22 +190,28 @@ body {
 }
 
 /* ==>Modal styles<== */
-.modal-wrapper {
+
+/* .modal-wrapper {
   position: relative;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.26);
-}
+} */
 
 .modal {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
   width: 935px;
   height: 458px;
   border-radius: 18px;
-  background: #fff;
+  background: #f4f4f4;
   display: flex;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 
 .left-side {
@@ -211,8 +219,8 @@ body {
   height: 458px;
   display: flex;
   justify-content: center;
-  padding: 0 45px;
   align-items: center;
+  padding: 0 45px;
   border-radius: 18px 0px 0px 18px;
   background: rgb(0, 206, 169);
   background: linear-gradient(
@@ -223,7 +231,7 @@ body {
 }
 
 .right-side {
-  margin-top: 100px;
+  padding: 40px;
 }
 
 .right-side h1 {
@@ -289,26 +297,16 @@ input[type="number"] {
   margin-bottom: 24px;
 }
 
-/* ==> Responsive <== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(12, 67, 44, 0.30);
+  backdrop-filter: blur(4px);
+}
 
-
-@media only screen and (max-width: 1200px) {
-  .life-hack-section {
-    background-image: url("../images/bg-rotated.jpg");
-    background-size: cover;
-    overflow: auto;
-  }
-  .intro {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .life-hack_left-side-wrapper {
-    margin-bottom: 160px;
-    
-  }
-
-  .life-hack-section_info {
-    width: 100%;
-  }
+.hidden {
+  display: none;
 }
