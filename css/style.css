@@ -31,8 +31,19 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  color: #fff;
+  background: #fb4545;
+  line-height: 132%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*==> /Main styles <==*/
@@ -42,9 +53,11 @@ body {
 .life-hack-section {
   margin: 0 auto;
   position: relative;
-  width: 1440px;
-  height: 961px;
+  max-width: 1440px;
+  height: 100vh;
   background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   overflow: hidden;
 }
 
@@ -55,16 +68,20 @@ body {
 }
 /* /Logo styles */
 
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
 .life-hack_left-side-wrapper {
   max-width: 684px;
-  float: left;
   position: relative;
 }
 
 .life-hack-section_info h1 {
   margin-bottom: 30px;
   color: #193c3f;
-  font-size: 65px;
+  font-size: 4rem;
   line-height: 132%;
 }
 
@@ -103,18 +120,11 @@ body {
   line-height: 132%;
 }
 
-.btn {
+.main-btn {
   width: 343px;
   height: 60px;
   margin-bottom: 75px;
-  color: #fff;
-  background: #fb4545;
   font-size: 17px;
-  line-height: 132%;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .life-hack_left-side-wrapper img {
@@ -161,20 +171,20 @@ body {
 }
 
 .life-hack_right-side {
-  float: right;
+  /* float: right; */
 }
 
 .banner-img-man {
-  width: 878px;
+  width: 828px;
   position: absolute;
-  top: -165px;
-  right: -119px;
+  top: -163px;
+  right: -167px;
 }
 
 .banner-img-book {
   position: absolute;
   top: 283px;
-  right: 306px;
+  right: 246px;
 }
 
 /* ==>Modal styles<== */
@@ -186,7 +196,6 @@ body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.26);
 }
-
 
 .modal {
   width: 935px;
@@ -206,11 +215,15 @@ body {
   align-items: center;
   border-radius: 18px 0px 0px 18px;
   background: rgb(0, 206, 169);
-  background: linear-gradient(90deg,rgba(0, 206, 169, 0.18) 0%,rgba(0, 83, 206, 0.24) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 169, 0.18) 0%,
+    rgba(0, 83, 206, 0.24) 100%
+  );
 }
 
 .right-side {
-  padding: 40px;
+  margin-top: 100px;
 }
 
 .right-side h1 {
@@ -220,7 +233,7 @@ body {
 }
 
 .right-side h1 span {
-  color: #3CB27F;
+  color: #3cb27f;
 }
 
 .right-side > p {
@@ -229,8 +242,8 @@ body {
   margin-bottom: 24px;
 }
 
-.right-side > p span{
-  color: #3CB27F;
+.right-side > p span {
+  color: #3cb27f;
   font-weight: 600;
 }
 
@@ -245,12 +258,12 @@ input {
   width: 428px;
   height: 48px;
   border-radius: 12px;
-  border: 1px solid #BED4DA;
-  background: #F3F7F8;
+  border: 1px solid #bed4da;
+  background: #f3f7f8;
 }
 
 input::placeholder {
-  color: #BFD2CC;
+  color: #bfd2cc;
   font-size: 16px;
   font-weight: 400;
   line-height: 132%;
@@ -274,4 +287,28 @@ input[type="number"] {
   width: 428px;
   height: 48px;
   margin-bottom: 24px;
+}
+
+/* ==> Responsive <== */
+
+
+@media only screen and (max-width: 1200px) {
+  .life-hack-section {
+    background-image: url("../images/bg-rotated.jpg");
+    background-size: cover;
+    overflow: auto;
+  }
+  .intro {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .life-hack_left-side-wrapper {
+    margin-bottom: 160px;
+    
+  }
+
+  .life-hack-section_info {
+    width: 100%;
+  }
 }
