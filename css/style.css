@@ -551,7 +551,6 @@ input[type="number"] {
   .modal {
     display: block;
     width: 100%;
-    height: 100%;
     border-radius: 0px;
   }
 
@@ -572,6 +571,11 @@ input[type="number"] {
     
   .close-modal {
     display: block;
+  }
+
+  .conty-code {
+    bottom: 60px;
+    right: 369px;
   }
   
 }
@@ -641,5 +645,12 @@ input[type="number"] {
     width: 170px;
     bottom: 81px;
     right: -12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .conty-code {
+    bottom: 62px;
+    right: -58px;
   }
 }
