@@ -3,7 +3,6 @@ const modal = document.getElementById('modal')
 const closeModal = document.getElementById('close-modal')
 const overlay = document.getElementById('overlay')
 
-
 showBtn.addEventListener('click', ()=>{
     modal.classList.remove('hidden')
     overlay.classList.remove('hidden')
