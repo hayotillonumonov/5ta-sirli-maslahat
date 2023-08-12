@@ -1,0 +1,516 @@
+/*==> Fonts start <==*/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2"),
+    url("../fonts/Poppins-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2"),
+    url("../fonts/Poppins-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*==> /Fonts end <==*/
+
+/*==>  Main styles  <==*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  color: #fff;
+  background: #fb4545;
+  line-height: 132%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #a12c2c;
+}
+
+a {
+  display: inline-block;
+}
+
+/*==> /Main styles <==*/
+
+/*==> Life hack section styles start <==*/
+
+.life-hack-section {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Logo styles */
+.life-hack-section_breand {
+  padding-top: 38px;
+  margin-bottom: 60px;
+}
+/* /Logo styles */
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.life-hack_left-side-wrapper {
+  max-width: 684px;
+  position: relative;
+}
+
+.life-hack-section_info h1 {
+  margin-bottom: 30px;
+  color: #193c3f;
+  font-size: 4rem;
+  line-height: 132%;
+}
+
+.life-hack-section_info h1 span {
+  color: #fff;
+  background: #3cb27f;
+  padding: 0 10px;
+  border-radius: 18px;
+}
+
+.life-hack-section_info .paragaph-1 {
+  margin-bottom: 30px;
+  color: #48635b;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+.life-hack-section_info .paragaph-1 span {
+  color: #48635b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.life-hack-section_info .paragaph-2 {
+  color: #000;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+.life-hack-section_info .paragaph-2 span {
+  color: #3cb27f;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main-btn {
+  width: 343px;
+  height: 60px;
+  margin-bottom: 75px;
+  font-size: 17px;
+}
+
+
+.strelka {
+  width: 120px;
+  height: 95px;
+  position: absolute;
+  top: 342px;
+  left: 376px;
+  background-image: url(../images/strelka.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.life-hack-section_statistics {
+  width: 510px;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics-item {
+  width: 158px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-item h2 {
+  color: #193c3f;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 132%;
+}
+
+.statistics-item p {
+  color: rgba(25, 60, 63, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+.life-hack-section_images {
+  position: relative;
+}
+
+.banner-img-man {
+  width: 828px;
+  position: absolute;
+  top: -163px;
+  right: -167px;
+}
+
+.banner-img-book {
+  position: absolute;
+  top: 283px;
+  right: 246px;
+}
+
+/* ==>Modal styles<== */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 935px;
+  height: 458px;
+  border-radius: 18px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.left-side {
+  width: 427px;
+  height: 458px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 45px;
+  border-radius: 18px 0px 0px 18px;
+  background: rgb(0, 206, 169);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 169, 0.18) 0%,
+    rgba(0, 83, 206, 0.24) 100%
+  );
+}
+
+.right-side {
+  padding: 40px;
+}
+
+.right-side h1 {
+  font-size: 30px;
+  line-height: 132%;
+  margin-bottom: 12px;
+}
+
+.right-side h1 span {
+  color: #3cb27f;
+}
+
+.right-side > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.right-side > p span {
+  color: #3cb27f;
+  font-weight: 600;
+}
+
+form p {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+input {
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  width: 428px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #bed4da;
+  background: #f3f7f8;
+}
+
+input::placeholder {
+  color: #bfd2cc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+input[type="number"] {
+  padding-left: 78px;
+}
+
+.number-input {
+  position: relative;
+}
+
+.conty-code {
+  position: absolute;
+  bottom: -13px;
+  right: 366px;
+}
+
+.modal-btn {
+  width: 428px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(12, 67, 44, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .life-hack-section {
+    height: 100vh;
+    background-image: url("../images/bg-rotated.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .life-hack-section_breand {
+    padding-top: 28px;
+    margin-bottom: 17px;
+  }
+  .life-hack-section_breand a img{
+    display: inline-block;
+    width: 97px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .life-hack_left-side-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  
+  .life-hack-section_info h1 {
+    margin-bottom: 22px;
+    color: #193c3f;
+    font-size: 32px;
+    line-height: 132%;
+  }
+
+  .life-hack-section_info .paragaph-1 {
+    margin-bottom: 15px;
+    color: #48635b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+  }
+  
+  .life-hack-section_info .paragaph-1 span {
+    color: #48635b;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .life-hack-section_info .paragaph-2 {
+    color: #000;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 132%;
+  }
+  
+  .life-hack-section_info .paragaph-2 span {
+    color: #3cb27f;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .main-btn {
+    width: 309px;
+    height: 60px;
+    margin-bottom: 22px;
+    font-size: 17px;
+  }
+
+  .strelka {
+    width: 25px;
+    height: 107px;
+    top: 209px;
+    left: 326px;
+    background-image: url(../images/strelka-responsive.svg);
+    background-size: contain;
+  }
+  
+  .life-hack-section_statistics {
+    display: none;
+  }
+
+  .banner-img-man {
+    display: inline-block;
+    width: 450px;
+    position: absolute;
+    top: 17px;
+    right: 35px;
+  }
+
+  .banner-img-book {
+    width: 172px;
+    position: absolute;
+    top: 143px;
+    right: 0;
+  }
+
+  .modal {
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0 0;
+  }
+
+  .left-side {
+    width: 100%;
+    height: 330px;
+    padding: 0 75px;
+    border-radius: 0 0 0 0;
+    background: rgb(0, 206, 169);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 206, 169, 0.18) 0%,
+      rgba(0, 83, 206, 0.24) 100%
+    );
+  }
+
+  .left-side img {
+    width: 95%;
+  }
+
+  .right-side {
+    padding: 12px;
+  }
+  
+  .right-side h1 {
+    font-size: 24px;
+    line-height: 132%;
+    margin-bottom: 12px;
+  }
+  
+  .right-side h1 span {
+    color: #3cb27f;
+  }
+  
+  .right-side > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  
+  .right-side > p span {
+    color: #3cb27f;
+    font-weight: 600;
+  }
+  
+  form p {
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  
+  input {
+    margin-bottom: 24px;
+    padding: 14px 18px;
+    width: 342px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #bed4da;
+    background: #f3f7f8;
+  }
+  
+  input::placeholder {
+    color: #bfd2cc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 132%;
+  }
+  
+  input[type="number"] {
+    padding-left: 78px;
+  }
+  
+  .number-input {
+    position: relative;
+  }
+  
+  .conty-code {
+    position: absolute;
+    bottom: -13px;
+    right: 366px;
+  }
+  
+  .modal-btn {
+    width: 332px;
+    height: 48px;
+    margin-bottom: 24px;
+  }
+
+  .overlay {
+    display: none;
+  }
+}

@@ -4,38 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/normolize.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <title>5 ta sirli maslahat</title>
   </head>
   <body>
     <section class="life-hack-section">
       <div class="container">
-        <div class="life-hack-section_breand">
-          <a class="life-hack-section_breand-link" href="#">
-            <img src="images/logo.svg" alt="fulfil brand images" />
-          </a>
-        </div>
+        <a class="life-hack-section_breand" href="#">
+          <img src="images/logo.svg" alt="fulfil brand images" />
+        </a>
         <div class="intro">
-          <div class="life-hack_left-side-wrapper">
-            <div class="life-hack-section_info">
-              <h1>
-                Dasturlash bo’yicha <br />
-                muhim <span>5 ta sir</span>
-              </h1>
-              <p class="paragaph-1">
-                Bu <span>muhim</span> 5 ta sirni bilmasdan dasturlashni
-                o'rganish uchun o'quv markazlariga pul sarflamang
-              </p>
-              <p class="paragaph-2">
-                5 ta sir qo`llanmasini <span>BEPUL</span> yuklab olish uchun
-                <br />“yuklab olish” tugmasini bosing
-              </p>
-              <button class="btn main-btn" id="show-btn">
-                Qo'llanmani yuklab olish
-              </button>
-            </div>
-            <div class="life-hack-section_statistics">
+          <div class="life-hack_left-side">
+            <h1 class="section-title">
+              Dasturlash bo’yicha <br />
+              muhim <span>5 ta sir</span>
+            </h1>
+            <p class="section-subtitle-1">
+              Bu <span>muhim</span> 5 ta sirni bilmasdan dasturlashni o'rganish
+              uchun o'quv markazlariga pul sarflamang
+            </p>
+            <p class="section-subtitle-2">
+              5 ta sir qo`llanmasini <span>BEPUL</span> yuklab olish uchun
+              “yuklab olish” tugmasini bosing
+            </p>
+            <button class="btn main-btn" id="show-btn">
+              Qo'llanmani yuklab olish
+            </button>
+
+            <div class="statistics">
               <div class="statistics-item">
                 <h2>837+</h2>
                 <p>yuklab olindi</p>
@@ -49,27 +45,27 @@
                 <p>tavsiya etildi</p>
               </div>
             </div>
-            <img src="images/strelka.svg" alt="strelka" />
+            <div class="strelka"></div>
           </div>
           <div class="life-hack_right-side">
-            <div class="life-hack-section_images">
-              <img
-                class="banner-img-man"
-                src="images/banner-img-man.png"
-                alt="banner-img-man"
-              />
-              <img
-                class="banner-img-book"
-                src="images/banner-img-book.png"
-                alt="banner-img-book"
-              />
-            </div>
+            <img
+              class="banner-img-man"
+              src="images/banner-img-man.png"
+              alt="banner-img-man"
+            />
+            <img
+              class="banner-img-book"
+              src="images/banner-img-book.png"
+              alt="banner-img-book"
+            />
           </div>
         </div>
       </div>
     </section>
+
     <!-- Modal -->
-    <div class="modal hidden" id="modal">
+
+    <!-- <div class="modal hidden" id="modal">
       <div class="left-side">
         <img src="images/modal-book.png" alt="modal-book" />
       </div>
@@ -93,8 +89,10 @@
           <button class="btn modal-btn">Qo'llanmani yuklab olish</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
     <!-- OVERLAY -->
+
     <div class="overlay hidden" id="overlay"></div>
 
     <!-- JS -->

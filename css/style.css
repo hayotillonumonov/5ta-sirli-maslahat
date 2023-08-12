@@ -1,3 +1,7 @@
+:root {
+  --breand-color: #3cb27f;
+}
+
 /*==> Fonts start <==*/
 
 @font-face {
@@ -27,119 +31,102 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .btn {
   color: #fff;
+  font-size: 17px;
   background: #fb4545;
-  line-height: 132%;
   text-transform: uppercase;
   border: none;
   border-radius: 12px;
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s;
+  transition: background 0.5s;
 }
 
 .btn:hover {
   background: #a12c2c;
 }
 
-/*==> /Main styles <==*/
-
-/*==> Life hack section styles start <==*/
-
 .life-hack-section {
+  position: relative;
+  height: 950px;
   margin: 0 auto;
-  max-width: 1440px;
-  height: 931px;
-  background-image: url("../images/bg.jpg");
+  background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-/* Logo styles */
 .life-hack-section_breand {
+  display: inline-block;
+  width: 132px;
   padding-top: 38px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
-/* /Logo styles */
 
 .intro {
   display: flex;
+  max-width: 1400px;
   justify-content: space-between;
 }
 
-.life-hack_left-side-wrapper {
-  max-width: 684px;
-  position: relative;
+.life-hack_left-side {
+  padding-right: 10px;
+  width: 50%;
 }
 
-.life-hack-section_info h1 {
-  margin-bottom: 30px;
-  color: #193c3f;
-  font-size: 4rem;
-  line-height: 132%;
+.section-title {
+  font-size: 4em;
+  font-weight: 600;
 }
 
-.life-hack-section_info h1 span {
+.section-title span {
   color: #fff;
-  background: #3cb27f;
+  background: var(--breand-color);
   padding: 0 10px;
   border-radius: 18px;
 }
 
-.life-hack-section_info .paragaph-1 {
-  margin-bottom: 30px;
+.section-subtitle-1 {
   color: #48635b;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 132%;
+  font-size: 1.5em;
+  margin: 30px 0;
 }
 
-.life-hack-section_info .paragaph-1 span {
+.section-subtitle-1 span {
   color: #48635b;
-  font-size: 24px;
   font-weight: 600;
 }
 
-.life-hack-section_info .paragaph-2 {
-  color: #000;
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 132%;
+.section-subtitle-2 {
+  color: #48635b;
+  font-size: 1.5em;
+  margin: 30px 0;
 }
 
-.life-hack-section_info .paragaph-2 span {
-  color: #3cb27f;
-  font-size: 32px;
+.section-subtitle-2 span {
+  color: var(--breand-color);
   font-weight: 600;
 }
 
 .main-btn {
   width: 343px;
   height: 60px;
+  margin-top: 33px;
   margin-bottom: 75px;
-  font-size: 17px;
 }
 
-.life-hack_left-side-wrapper img {
-  position: absolute;
-  top: 355px;
-  left: 377px;
-}
-
-.life-hack-section_statistics {
+.statistics {
   width: 510px;
   height: 112px;
   display: flex;
@@ -149,164 +136,324 @@ body {
 .statistics-item {
   width: 158px;
   height: 112px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-shrink: 0;
+  padding: 25px;
+  text-align: center;
   border-radius: 24px;
   background: #fff;
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.statistics-item h2 {
+.statistics-item h1 {
   color: #193c3f;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 600;
-  line-height: 132%;
 }
 
 .statistics-item p {
   color: rgba(25, 60, 63, 0.5);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 132%;
 }
 
-.life-hack-section_images {
+.life-hack_right-side {
   position: relative;
+  width: 50%;
 }
 
 .banner-img-man {
-  width: 828px;
+  width: 900px;
   position: absolute;
-  top: -163px;
-  right: -167px;
+  bottom: -84px;
+  right: -90px;
 }
 
 .banner-img-book {
   position: absolute;
-  top: 283px;
-  right: 246px;
+  bottom: -67px;
+  right: 450px;
 }
 
-/* ==>Modal styles<== */
-
-/* .modal-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.26);
-} */
-
-.modal {
-  position: fixed;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 100;
-  width: 935px;
-  height: 458px;
-  border-radius: 18px;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.5s;
+@media only screen and (max-width: 1400px) {
+  .life-hack-section {
+    height: 918px;
+  }
+  .section-title {
+    font-size: 3.5em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1.3em;
+  }
+  .banner-img-man {
+    bottom: -116px;
+    right: -213px;
+  }
+  .banner-img-book {
+    right: 330px;
+  }
 }
 
-.left-side {
-  width: 427px;
-  height: 458px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 45px;
-  border-radius: 18px 0px 0px 18px;
-  background: rgb(0, 206, 169);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 206, 169, 0.18) 0%,
-    rgba(0, 83, 206, 0.24) 100%
-  );
+@media only screen and (max-width: 1200px) {
+  .life-hack-section {
+    height: 864px;
+  }
+  .section-title {
+    font-size: 3em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1.1em;
+  }
+  .banner-img-man {
+    right: -234px;
+  }
+  .banner-img-book {
+    right: 251px;
+  }
 }
 
-.right-side {
-  padding: 40px;
+@media only screen and (max-width: 1120px) {
+  .life-hack-section {
+    height: 864px;
+  }
+
+  .section-title {
+    font-size: 2.8em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1em;
+  }
+  .banner-img-man {
+    width: 845px;
+    right: -234px;
+  }
+  .banner-img-book {
+    width: 345px;
+    right: 251px;
+  }
+  .statistics {
+    width: 450px;
+  }
+  .statistics-item {
+    width: 130px;
+  }
 }
 
-.right-side h1 {
-  font-size: 30px;
-  line-height: 132%;
-  margin-bottom: 12px;
+@media only screen and (max-width: 1030px) {
+  .life-hack-section {
+    height: 732px;
+  }
+  .banner-img-man {
+    width: 750px;
+  }
+  .banner-img-book {
+    width: 320px;
+    right: 251px;
+  }
+  .statistics {
+    display: none;
+  }
 }
 
-.right-side h1 span {
-  color: #3cb27f;
+@media only screen and (max-width: 955px) {
+  .life-hack-section {
+    height: 1337px;
+    background-image: url(../images/bg-rotated.jpg);
+  }
+
+  .intro {
+    display: block;
+  }
+
+  .life-hack_left-side {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 4em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1.5em;
+    padding-right: 20px;
+  }
+  .btn {
+    width: 90%;
+  }
+  .life-hack_right-side {
+    position: static;
+  }
+  .banner-img-man {
+    width: 750px;
+    bottom: -150px;
+    right: 117px;
+  }
+  .banner-img-book {
+    width: 320px;
+    bottom: 13px;
+    right: 53px;
+  }
+  .statistics {
+    display: none;
+  }
 }
 
-.right-side > p {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 24px;
+@media only screen and (max-width: 683px) {
+  .life-hack-section {
+    height: 1272px;
+    background-image: url(../images/bg-rotated.jpg);
+  }
+
+  .intro {
+    display: block;
+  }
+
+  .life-hack_left-side {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 3em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1.2em;
+    padding-right: 15px;
+  }
+
+  .btn {
+    width: 90%;
+  }
+  .life-hack_right-side {
+    position: static;
+  }
+  .banner-img-man {
+    width: 641px;
+    bottom: -21px;
+    right: -2px;
+  }
+  .banner-img-book {
+    width: 271px;
+    bottom: 110px;
+    right: -13px;
+  }
+  .statistics {
+    display: none;
+  }
 }
 
-.right-side > p span {
-  color: #3cb27f;
-  font-weight: 600;
+@media only screen and (max-width: 539px) {
+  .life-hack-section {
+    height: 1192px;
+    background-image: url(../images/bg-rotated.jpg);
+  }
+
+  .intro {
+    display: block;
+  }
+
+  .life-hack_left-side {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2.5em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1.2em;
+    padding-right: 15px;
+  }
+
+  .btn {
+    width: 90%;
+  }
+  .life-hack_right-side {
+    position: static;
+  }
+  .banner-img-man {
+    width: 547px;
+    bottom: -21px;
+    right: -2px;
+  }
+  .banner-img-book {
+    width: 229px;
+    bottom: 110px;
+    right: -13px;
+  }
+  .statistics {
+    display: none;
+  }
 }
 
-form p {
-  margin-bottom: 10px;
-  font-weight: 400;
+@media only screen and (max-width: 438px) {
+  .life-hack-section_breand {
+    width: 100px;
+    padding: 15px 0;
+  }
+
+  .life-hack-section {
+    height: 1100px;
+    background-image: url(../images/bg-rotated.jpg);
+  }
+
+  .intro {
+    display: block;
+  }
+
+  .life-hack_left-side {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2.3em;
+  }
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 1em;
+    padding-right: 10px;
+  }
+
+  .btn {
+    width: 90%;
+  }
+  .life-hack_right-side {
+    position: static;
+  }
+  .banner-img-man {
+    width: 547px;
+    bottom: -21px;
+    right: -2px;
+  }
+  .banner-img-book {
+    width: 229px;
+    bottom: 110px;
+    right: -13px;
+  }
+  .statistics {
+    display: none;
+  }
 }
 
-input {
-  margin-bottom: 24px;
-  padding: 14px 18px;
-  width: 428px;
-  height: 48px;
-  border-radius: 12px;
-  border: 1px solid #bed4da;
-  background: #f3f7f8;
+@media only screen and (max-width: 405px) {
+  .life-hack-section {
+    height: 1000px;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+  .banner-img-man {
+    width: 416px;
+    bottom: -21px;
+    right: -2px;
+  }
+  .banner-img-book {
+    width: 170px;
+    bottom: 81px;
+    right: -12px;
 }
+  }
 
-input::placeholder {
-  color: #bfd2cc;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 132%;
-}
-
-input[type="number"] {
-  padding-left: 78px;
-}
-
-.number-input {
-  position: relative;
-}
-
-.conty-code {
-  position: absolute;
-  bottom: -13px;
-  right: 366px;
-}
-
-.modal-btn {
-  width: 428px;
-  height: 48px;
-  margin-bottom: 24px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(12, 67, 44, 0.30);
-  backdrop-filter: blur(4px);
-}
-
-.hidden {
-  display: none;
 }
