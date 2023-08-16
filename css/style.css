@@ -1,3 +1,5 @@
+@import url(../css/modal.css);
+
 :root {
   --breand-color: #3cb27f;
 }
@@ -29,6 +31,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -38,10 +44,12 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .btn {
+  width: 343px;
+  height: 60px;
   color: #fff;
   font-size: 17px;
   background: #fb4545;
@@ -57,9 +65,7 @@ body {
 }
 
 .life-hack-section {
-  position: relative;
-  height: 950px;
-  margin: 0 auto;
+  padding-bottom: 61px;
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,24 +75,22 @@ body {
 
 .life-hack-section_breand {
   display: inline-block;
-  width: 132px;
-  padding-top: 38px;
-  padding-bottom: 60px;
+  padding-top: 2.375rem;
+  padding-bottom: 3.75rem;
 }
 
 .intro {
   display: flex;
-  max-width: 1400px;
-  justify-content: space-between;
 }
 
 .life-hack_left-side {
-  padding-right: 10px;
   width: 50%;
+  position: relative;
+  font-size: 16px;
 }
 
 .section-title {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -97,38 +101,42 @@ body {
   border-radius: 18px;
 }
 
-.section-subtitle-1 {
-  color: #48635b;
-  font-size: 1.5em;
-  margin: 30px 0;
-}
-
-.section-subtitle-1 span {
-  color: #48635b;
-  font-weight: 600;
-}
-
+.section-subtitle-1,
 .section-subtitle-2 {
   color: #48635b;
-  font-size: 1.5em;
-  margin: 30px 0;
+  font-size: 1.5rem;
+  margin: 1.875rem 0;
+}
+
+.section-subtitle-1 span,
+.section-subtitle-2 span {
+  color: #48635b;
+  font-weight: 600;
 }
 
 .section-subtitle-2 span {
+  font-size: 2.1rem;
   color: var(--breand-color);
-  font-weight: 600;
 }
 
-.main-btn {
-  width: 343px;
-  height: 60px;
-  margin-top: 33px;
-  margin-bottom: 75px;
+.strelka-1,
+.strelka-2 {
+  width: 100%;
 }
+
+.strelka {
+  width: 118px;
+  height: 84px;
+  position: absolute;
+  left: 378px;
+  top: 389px;
+}
+
+/* Statistics */
 
 .statistics {
   width: 510px;
-  height: 112px;
+  margin-top: 4.688rem;
   display: flex;
   justify-content: space-between;
 }
@@ -136,6 +144,9 @@ body {
 .statistics-item {
   width: 158px;
   height: 112px;
+  color: #193c3f;
+  font-size: 30px;
+  font-weight: 600;
   flex-shrink: 0;
   padding: 25px;
   text-align: center;
@@ -144,514 +155,254 @@ body {
   box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.statistics-item h1 {
-  color: #193c3f;
-  font-size: 1.875em;
-  font-weight: 600;
-}
-
 .statistics-item p {
   color: rgba(25, 60, 63, 0.5);
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400;
 }
 
+/* Right side */
+
 .life-hack_right-side {
-  position: relative;
   width: 50%;
+  position: relative;
 }
 
 .banner-img-man {
-  width: 900px;
+  width: 114%;
   position: absolute;
-  bottom: -84px;
-  right: -90px;
+  top: -121px;
+  left: -40px;
 }
 
 .banner-img-book {
+  width: 56%;
   position: absolute;
-  bottom: -67px;
-  right: 450px;
+  top: 280px;
+  left: -132px;
 }
 
-/* Modal */
-
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  width: 935px;
-  height: 458px;
-  border-radius: 18px;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.5s;
-}
-
-.left-side {
-  width: 427px;
-  height: 458px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 45px;
-  border-radius: 18px 0px 0px 18px;
-  background: rgb(0, 206, 169);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 206, 169, 0.18) 0%,
-    rgba(0, 83, 206, 0.24) 100%
-  );
-}
-
-.right-side {
-  position: relative;
-  padding: 40px;
-}
-
-.right-side h1 {
-  font-size: 30px;
-  line-height: 132%;
-  margin-bottom: 12px;
-}
-
-.right-side h1 span {
-  color: #3cb27f;
-}
-
-.right-side > p {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 24px;
-}
-
-.right-side > p span {
-  color: #3cb27f;
-  font-weight: 600;
-}
-
-form p {
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-input {
-  margin-bottom: 24px;
-  padding: 14px 18px;
-  width: 428px;
-  height: 48px;
-  border-radius: 12px;
-  border: 1px solid #bed4da;
-  background: #f3f7f8;
-}
-
-input::placeholder {
-  color: #bfd2cc;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 132%;
-}
-
-input[type="number"] {
-  padding-left: 78px;
-}
-
-.number-input {
-  position: relative;
-}
-
-.conty-code {
-  position: absolute;
-  bottom: -13px;
-  right: 366px;
-}
-
-.modal-btn {
-  width: 428px;
-  height: 48px;
-  margin-bottom: 24px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: rgba(12, 67, 44, 0.3);
-  backdrop-filter: blur(4px);
-}
-
-.hidden {
-  display: none;
-}
-
-.close-modal {
-  width: 50px;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
+.strelka-2 {
   display: none;
 }
 
 /* Responsive */
 
-@media only screen and (max-width: 1400px) {
-  .life-hack-section {
-    height: 918px;
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 12px;
   }
-  .section-title {
-    font-size: 3.5em;
+  .btn {
+    width: 305px;
   }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1.3em;
-  }
-  .banner-img-man {
-    bottom: -116px;
-    right: -213px;
+  .strelka {
+    width: 86px;
+    left: 328px;
+    top: 296px;
   }
   .banner-img-book {
-    right: 330px;
+    width: 49%;
+    top: 239px;
+    left: -72px;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .life-hack-section {
-    height: 864px;
+@media only screen and (max-width: 1165px) {
+  html {
+    font-size: 11px;
   }
-  .section-title {
-    font-size: 3em;
+  .btn {
+    width: 290px;
   }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1.1em;
-  }
-  .banner-img-man {
-    right: -234px;
-  }
-  .banner-img-book {
-    right: 251px;
-  }
-}
-
-@media only screen and (max-width: 1120px) {
-  .life-hack-section {
-    height: 864px;
-  }
-
-  .section-title {
-    font-size: 2.8em;
-  }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1em;
-  }
-  .banner-img-man {
-    width: 845px;
-    right: -234px;
-  }
-  .banner-img-book {
-    width: 345px;
-    right: 251px;
+  .strelka {
+    left: 313px;
+    top: 269px;
   }
   .statistics {
-    width: 450px;
+    width: 407px;
   }
   .statistics-item {
-    width: 130px;
+    width: 125px;
+    height: 91px;
+    padding: 20px;
+  }
+  .statistics-item {
+    font-size: 20px;
+  }
+  .statistics-item p {
+    font-size: 13px;
+  }
+  .banner-img-man {
+    width: 125%;
+  }
+  .banner-img-book {
+    width: 53%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .banner-img-man {
+    width: 128%;
+    top: -129px;
+  }
+
+  .banner-img-book {
+    width: 56%;
+    top: 207px;
+    left: -62px;
   }
 }
 
-@media only screen and (max-width: 1030px) {
-  .life-hack-section {
-    height: 732px;
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
   }
-  .banner-img-man {
-    width: 750px;
-  }
-  .banner-img-book {
-    width: 320px;
-    right: 251px;
+  .strelka {
+    top: 253px;
   }
   .statistics {
     display: none;
   }
+  .banner-img-man {
+    width: 121%;
+  }
+  .banner-img-book {
+    width: 50%;
+    top: 118px;
+  }
 }
 
-@media only screen and (max-width: 955px) {
-  .life-hack-section {
-    height: 1337px;
-    background-image: url(../images/bg-rotated.jpg);
-  }
-
+@media only screen and (max-width: 847px) {
   .intro {
-    display: block;
+    flex-wrap: wrap;
   }
 
   .life-hack_left-side {
     width: 100%;
   }
 
-  .section-title {
-    font-size: 4em;
+  html {
+    font-size: 16px;
   }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1.5em;
-    padding-right: 20px;
-  }
+
   .btn {
-    width: 90%;
+    width: 309px;
   }
+
   .life-hack_right-side {
-    position: static;
+    margin-top: 25px;
+    width: 100%;
+    height: 824px;
   }
+
   .banner-img-man {
-    width: 750px;
-    bottom: -150px;
-    right: 117px;
+    width: 95%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   .banner-img-book {
-    width: 320px;
-    bottom: 13px;
-    right: 53px;
+    top: 219px;
+    left: 469px;
   }
-  .statistics {
+
+  .strelka-1 {
     display: none;
   }
 
-  /* modal */
-
-  .modal {
-    position: absolute;
-    width: 500px;
-    height: 911px;
-    border-radius: 18px;
-    background: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-  }
-  .left-side {
-    width: 100%;
-    align-items: center;
-  }
-  .right-side {
-    padding: 10px;
-  }
-
-  .right-side h1 {
-    font-size: 27px;
-    line-height: 132%;
-    margin-bottom: 12px;
-  }
-
-  .hidden {
-    display: none;
-  }
-    
-  .close-modal {
+  .strelka-2 {
     display: block;
+    width: 25px;
+    left: 313px;
+    top: 269px;
   }
-  
-}
 
+  .strelka {
+    left: 400px;
+    top: 393px;
+  }
+}
 @media only screen and (max-width: 683px) {
-  .life-hack-section {
-    height: 1272px;
-    background-image: url(../images/bg-rotated.jpg);
+  html {
+    font-size: 13px;
   }
 
   .intro {
-    display: block;
+    justify-content: space-between;
   }
 
-  .life-hack_left-side {
-    width: 100%;
-  }
-
-  .section-title {
-    font-size: 3em;
-  }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1.2em;
-    padding-right: 15px;
-  }
-
-  .btn {
-    width: 90%;
-  }
   .life-hack_right-side {
-    position: static;
-  }
-  .banner-img-man {
-    width: 641px;
-    bottom: -21px;
-    right: -2px;
+    height: 503px;
   }
   .banner-img-book {
-    width: 271px;
-    bottom: 110px;
-    right: -13px;
+    top: 136px;
+    left: 316px;
   }
-  .statistics {
-    display: none;
+  .strelka {
+    left: 341px;
+    top: 317px;
   }
 }
 
-@media only screen and (max-width: 539px) {
-  .life-hack-section {
-    height: 1192px;
-    background-image: url(../images/bg-rotated.jpg);
-  }
-
-  .intro {
-    display: block;
-  }
-
-  .life-hack_left-side {
-    width: 100%;
-  }
-
-  .section-title {
-    font-size: 2.5em;
-  }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1.2em;
-    padding-right: 15px;
-  }
-
-  .btn {
-    width: 90%;
-  }
-  .life-hack_right-side {
-    position: static;
-  }
-  .banner-img-man {
-    width: 547px;
-    bottom: -21px;
-    right: -2px;
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 12px;
   }
   .banner-img-book {
-    width: 229px;
-    bottom: 110px;
-    right: -13px;
+    top: 108px;
   }
-  .statistics {
-    display: none;
+  .strelka {
+    top: 292px;
   }
-
-  .modal {
-    display: block;
-    width: 100%;
-    border-radius: 0px;
+}
+@media only screen and (max-width: 519px) {
+  html {
+    font-size: 11px;
   }
-
-  .left-side {
-    width: 100%;
-  }
-  .right-side {
-    padding: 15px;
+  .life-hack_right-side {
+    height: 503px;
   }
 
-  .input {
-    text-align: center;
+  .banner-img-book {
+    width: 44%;
+    top: 108px;
+  }
+  .strelka {
+    top: 292px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .life-hack_right-side {
+    height: 405px;
   }
 
-  .hidden {
-    display: none;
+  .banner-img-book {
+    top: 107px;
+    left: 281px;
   }
-    
-  .close-modal {
-    display: block;
+  .strelka {
+    left: 383px;
+    top: 222px;
   }
-
-  .conty-code {
-    bottom: -13px;
-    right: 369px;
-  }
-  
 }
 
 @media only screen and (max-width: 438px) {
-  .life-hack-section_breand {
-    width: 100px;
-    padding: 15px 0;
-  }
-
-  .life-hack-section {
-    height: 1100px;
-    background-image: url(../images/bg-rotated.jpg);
-  }
-
-  .intro {
-    display: block;
-  }
-
-  .life-hack_left-side {
-    width: 100%;
-  }
-
-  .section-title {
-    font-size: 2.3em;
-  }
-  .section-subtitle-1,
-  .section-subtitle-2 {
-    font-size: 1em;
-    padding-right: 10px;
-  }
-
-  .btn {
-    width: 90%;
+  html {
+    font-size: 9.5px;
   }
   .life-hack_right-side {
-    position: static;
+    height: 370px;
   }
-  .banner-img-man {
-    width: 547px;
-    bottom: -21px;
-    right: -2px;
-  }
-  .banner-img-book {
-    width: 229px;
-    bottom: 110px;
-    right: -13px;
-  }
-  .statistics {
-    display: none;
-  }
-}
 
-@media only screen and (max-width: 405px) {
-  .life-hack-section {
-    height: 1000px;
-  }
-  .section-title {
-    font-size: 2em;
-  }
-  .banner-img-man {
-    width: 416px;
-    bottom: -21px;
-    right: -2px;
-  }
   .banner-img-book {
-    width: 170px;
-    bottom: 81px;
-    right: -12px;
+    left: 245px;
   }
-}
-
-@media only screen and (max-width: 375px) {
-  .conty-code {
-    bottom: 62px;
-    right: -58px;
+  .strelka {
+    left: 383px;
+    top: 222px;
   }
 }

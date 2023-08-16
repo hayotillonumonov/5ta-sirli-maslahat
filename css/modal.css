@@ -1,0 +1,216 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 935px;
+  height: 458px;
+  border-radius: 18px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.left-side {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px 0px 0px 18px;
+  background: rgb(0, 206, 169);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 169, 0.18) 0%,
+    rgba(0, 83, 206, 0.24) 100%
+  );
+}
+
+.right-side {
+  width: 66%;
+  padding: 40px;
+}
+
+.right-side h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.right-side h1 span {
+  color: #3cb27f;
+}
+
+.right-side > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.right-side > p span {
+  color: #3cb27f;
+  font-weight: 600;
+}
+
+form p {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+input {
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  width: 428px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #bed4da;
+  background: #f3f7f8;
+}
+
+input::placeholder {
+  color: #bfd2cc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 132%;
+}
+
+input[type="number"] {
+  padding-left: 78px;
+}
+
+.number-input {
+  position: relative;
+}
+
+.conty-code {
+  position: absolute;
+  bottom: -13px;
+  right: 366px;
+}
+
+.modal-btn {
+  width: 428px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(12, 67, 44, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+  width: 50px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+@media only screen and (max-width: 922px) {
+  .modal {
+    position: fixed;
+    width: 100%;
+  }
+
+  .conty-code {
+    font-size: 12px;
+    bottom: -11px;
+    right: 370px;
+  }
+}
+
+@media only screen and (max-width: 847px) {
+  .conty-code {
+    font-size: 15px;
+    right: 350px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .conty-code {
+    font-size: 15px;
+    bottom: 54px;
+    right: 350px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    width: 410px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .modal {
+    position: fixed;
+    top: 230px;
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .left-side img {
+    width: 60%;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .conty-code {
+    font-size: 15px;
+    bottom: -20px;
+    right: 265px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    width: 98%;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .right-side h1 {
+    font-size: 26px;
+  }
+
+  .right-side h1 span {
+    color: #3cb27f;
+  }
+
+  .right-side > p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  .right-side > p span {
+    color: #3cb27f;
+    font-weight: 600;
+  }
+
+  form p {
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+}
