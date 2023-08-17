@@ -57,6 +57,10 @@ form p {
   font-weight: 400;
 }
 
+label p {
+  font-size: 14px;
+}
+
 input {
   margin-bottom: 24px;
   padding: 14px 18px;
@@ -144,11 +148,17 @@ input[type="number"] {
 }
 
 @media only screen and (max-width: 790px) {
+  
+  .right-side {
+    padding: 10px;
+  }
+
   .conty-code {
     font-size: 15px;
     bottom: 54px;
     right: 350px;
   }
+
 
   input {
     margin-bottom: 10px;
@@ -156,7 +166,7 @@ input[type="number"] {
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 380px) {
   .modal {
     position: fixed;
     top: 230px;
@@ -185,7 +195,7 @@ input[type="number"] {
   .conty-code {
     font-size: 15px;
     bottom: -20px;
-    right: 265px;
+    right: 289px;
   }
 
   input {
