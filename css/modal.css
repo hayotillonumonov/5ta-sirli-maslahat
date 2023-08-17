@@ -165,14 +165,21 @@ input[type="number"] {
 
   .left-side {
     width: 100%;
+    padding: 40px 0;
+    border-radius: 0px 0px 0px 0px;
   }
 
   .left-side img {
     width: 60%;
   }
 
+  .close-modal {
+    display: block;
+  }
+
   .right-side {
     width: 100%;
+    background: #f4f4f4
   }
 
   .conty-code {
@@ -212,5 +219,9 @@ input[type="number"] {
   form p {
     margin-bottom: 16px;
     font-weight: 400;
+  }
+
+  .modal-btn {
+    margin-top: 29px;
   }
 }
