@@ -165,7 +165,7 @@ input[type="number"] {
 
   .left-side {
     width: 100%;
-    padding: 40px 0;
+    padding: 25px 0;
     border-radius: 0px 0px 0px 0px;
   }
 
@@ -222,6 +222,56 @@ input[type="number"] {
   }
 
   .modal-btn {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .right-side {
+    width: 100%;
+    background: #f4f4f4
+  }
+
+  .conty-code {
+    font-size: 15px;
+    bottom: -20px;
+    right: 283px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    width: 98%;
+  }
+
+  .overlay {
+    display: none;
+  }
+  .right-side {
+    padding: 10px;
+  }
+  .right-side h1 {
+    font-size: 25px;
+  }
+
+  .right-side h1 span {
+    color: #3cb27f;
+  }
+
+  .right-side > p {
+    font-size: 14px;
+  }
+
+  .right-side > p span {
+    color: #3cb27f;
+    font-weight: 600;
+  }
+
+  form p {
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .modal-btn {
+    width: 100%;
     margin-top: 15px;
   }
 }
