@@ -1,4 +1,5 @@
 .modal {
+ 
   position: fixed;
   top: 50%;
   left: 50%;
@@ -166,17 +167,17 @@ input[type="number"] {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (min-width: 375px) and (max-width: 480px) {
   .modal {
-    position: fixed;
-    top: 230px;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
   }
 
   .left-side {
     width: 100%;
-    padding: 25px 0;
-    border-radius: 0px 0px 0px 0px;
+    padding: 25px;
+    border-radius: 0 0 0 0;
   }
 
   .left-side img {
@@ -187,54 +188,24 @@ input[type="number"] {
     display: block;
   }
 
+
   .right-side {
     width: 100%;
-    background: #f4f4f4
-  }
-
-  .conty-code {
-    font-size: 15px;
-    bottom: -20px;
-    right: 289px;
-  }
-
-  input {
-    margin-bottom: 10px;
-    width: 98%;
-  }
-
-  .overlay {
-    display: none;
   }
 
   .right-side h1 {
-    font-size: 26px;
+    font-size: 30px;
+    margin-bottom: 12px;
   }
-
-  .right-side h1 span {
-    color: #3cb27f;
-  }
-
-  .right-side > p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 24px;
-  }
-
-  .right-side > p span {
-    color: #3cb27f;
-    font-weight: 600;
-  }
-
-  form p {
-    margin-bottom: 16px;
-    font-weight: 400;
-  }
-
-  .modal-btn {
-    margin-top: 15px;
+  
+  .conty-code {
+    font-size: 15px;
+    bottom: -13px;
+    right: 350px;
   }
 }
+
+/* 
 @media only screen and (max-width: 375px) {
   .right-side {
     width: 100%;
@@ -290,4 +261,4 @@ input[type="number"] {
   .conty-code {
     right: 260px;
   }
-}
+} */
