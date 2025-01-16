@@ -10,30 +10,29 @@
   <body>
     <section class="life-hack-section">
       <div class="container">
-        <a class="life-hack-section_breand" href="#">
-          <img src="images/logo.svg" alt="fulfil brand images" />
-        </a>
         <div class="intro">
           <div class="life-hack_left-side">
+            <a class="life-hack-section_breand" href="#">
+              <img src="images/logo.svg" alt="fulfil brand images" />
+            </a>
             <h1 class="section-title">
-              Dasturlash bo’yicha <br />
-              muhim <span>5 ta sir</span>
+              Dasturlash bo’yicha muhim <span>5 ta sir</span>
             </h1>
             <p class="section-subtitle-1">
-              Bu <span>muhim</span> 5 ta sirni bilmasdan dasturlashni <br> o'rganish
+              Bu <span>muhim</span> 5 ta sirni bilmasdan dasturlashni o'rganish
               uchun o'quv markazlariga pul sarflamang
             </p>
             <p class="section-subtitle-2">
-              5 ta sir qo`llanmasini <span>BEPUL</span> yuklab olish uchun <br>
+              5 ta sir qo`llanmasini <span>BEPUL</span> yuklab olish uchun
               “yuklab olish” tugmasini bosing
             </p>
             <button class="btn main-btn" id="show-btn">
+              <div class="strelka">
+                <img class="strelka-1" src="images/strelka.svg" />
+                <img class="strelka-2" src="images/strelka-responsive.svg" />
+              </div>
               Qo'llanmani yuklab olish
             </button>
-            <div class="strelka">
-              <img class="strelka-1" src="images/strelka.svg">
-              <img class="strelka-2" src="images/strelka-responsive.svg">
-            </div>
 
             <div class="statistics">
               <div class="statistics-item">
@@ -49,8 +48,8 @@
                 <p>tavsiya etildi</p>
               </div>
             </div>
-            
           </div>
+
           <div class="life-hack_right-side">
             <img
               class="banner-img-man"
@@ -65,41 +64,43 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Modal -->
-    <div class="modal hidden" id="modal">
-      <div class="left-side">
-        <div class="close-modal" id="close-modal">
-          <img src="images/close-icon.png" alt="close" />
+      <!-- Modal -->
+      <!-- <div class="overlay" id="overlay">
+        <div class="modal" id="modal">
+          <div class="left-side">
+            <div class="close-modal" id="close-modal">
+              <img src="images/close-icon.png" alt="close" />
+            </div>
+            <img src="images/modal-book.png" alt="modal-book" />
+          </div>
+          <div class="right-side">
+            <h1>Qo’llanmani <span>yuklab olish</span></h1>
+            <p>
+              Pastdagi formani to'ldirishingiz bilan 5ta sirli <br />
+              <span>BEPUL</span> qo'llanma siz uchun ochiladi
+            </p>
+            <form action="#">
+              <label>
+                <p>Ism</p>
+                <input class="input" type="text" placeholder="Ismingizni kiriting" />
+              </label>
+
+              <div class="number-input">
+                <label>
+                  <p>Telefon raqami</p>
+                </label>
+                <div class="cod">
+                  <p class="">+998</p>
+                  <input type="text" />
+                </div>
+              </div>
+              <button class="btn modal-btn">Qo'llanmani yuklab olish</button>
+            </form>
+          </div>
         </div>
-        <img src="images/modal-book.png" alt="modal-book" />
-      </div>
-      <div class="right-side">
-        <h1>Qo’llanmani <span>yuklab olish</span></h1>
-        <p>
-          Pastdagi formani to'ldirishingiz bilan 5ta sirli <br />
-          <span>BEPUL</span> qo'llanma siz uchun ochiladi
-        </p>
-        <form action="#">
-          <label>
-            <p>Ism</p>
-            <input type="text" placeholder="Ismingizni kiriting" />
-          </label>
-
-          <label class="number-input">
-            <p>Telefon raqami</p>
-            <input type="number" />
-            <p class="conty-code">+998</p>
-          </label>
-          <button class="btn modal-btn">Qo'llanmani yuklab olish</button>
-        </form>
-      </div>
-    </div>
-    <!-- Modal finish -->
-    <!-- OVERLAY -->
-
-    <div class="overlay hidden" id="overlay"></div>
+      </div> -->
+    </section>
 
     <!-- JS -->
     <script src="js/main.js"></script>

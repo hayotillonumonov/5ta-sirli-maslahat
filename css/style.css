@@ -1,144 +1,84 @@
+@import url(general.css);
 @import url(../css/modal.css);
 
-:root {
-  --breand-color: #3cb27f;
-}
-
-/*==> Fonts start <==*/
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-SemiBold.woff2"),
-    url("../fonts/Poppins-SemiBold.woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2"),
-    url("../fonts/Poppins-Regular.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/*==> /Fonts end <==*/
-
-/*==>  Main styles  <==*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  position: relative;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.btn {
-  width: 343px;
-  height: 60px;
-  color: #fff;
-  font-size: 17px;
-  background: #fb4545;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
-  transition: background 0.5s;
-}
-
-.btn:hover {
-  background: #a12c2c;
-}
-
 .life-hack-section {
-  padding-bottom: 61px;
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
 }
 
 .life-hack-section_breand {
   display: inline-block;
-  padding-top: 2.375rem;
-  padding-bottom: 3.75rem;
+  padding-top: 38px;
+  padding-bottom: 60px;
 }
-
+.life-hack-section_breand img {
+  width: 100%;
+}
 .intro {
   display: flex;
 }
 
 .life-hack_left-side {
-  width: 50%;
-  position: relative;
-  font-size: 16px;
+  width: 60%;
+  border: 1px solid;
 }
 
 .section-title {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 65px;
 }
 
 .section-title span {
   color: #fff;
   background: var(--breand-color);
-  padding: 0 10px;
+  padding: 0 19px;
   border-radius: 18px;
 }
 
 .section-subtitle-1,
 .section-subtitle-2 {
+  width: 80%;
   color: #48635b;
-  font-size: 1.5rem;
+  font-size: 24px;
   margin: 1.875rem 0;
+  border: 1px solid black;
 }
 
 .section-subtitle-1 span,
 .section-subtitle-2 span {
-  color: #48635b;
   font-weight: 600;
 }
 
+.section-subtitle-2 {
+  color: black;
+}
+
 .section-subtitle-2 span {
-  font-size: 2.1rem;
+  font-size: 32px;
   color: var(--breand-color);
 }
 
-.strelka-1,
-.strelka-2 {
-  width: 100%;
+.strelka-1 {
+  position: absolute;
+  right: -150px;
+  bottom: 10px;
 }
 
-.strelka {
-  width: 118px;
-  height: 84px;
-  position: absolute;
-  left: 378px;
-  top: 389px;
+.strelka-2 {
+  display: none;
 }
 
 /* Statistics */
 
 .statistics {
+  position: relative;
   width: 510px;
   margin-top: 4.688rem;
+  margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .statistics-item {
@@ -164,146 +104,75 @@ body {
 /* Right side */
 
 .life-hack_right-side {
-  width: 50%;
+  width: 40%;
   position: relative;
+  border: 1px solid;
 }
 
 .banner-img-man {
-  width: 114%;
+  width: 704px;
   position: absolute;
-  top: -121px;
-  left: -40px;
+  right: -15px;
+  bottom: 0;
 }
 
 .banner-img-book {
-  width: 56%;
   position: absolute;
-  top: 280px;
-  left: -132px;
-}
-
-.strelka-2 {
-  display: none;
+  left: -245px;
+  bottom: 20px;
 }
 
 /* Responsive */
 
-@media only screen and (max-width: 1366px) {
-  html {
-    font-size: 12px;
-  }
-  .btn {
-    width: 305px;
-  }
-  .strelka {
-    width: 86px;
-    left: 328px;
-    top: 296px;
-  }
-  .banner-img-book {
-    width: 49%;
-    top: 239px;
-    left: -72px;
-  }
-}
-
-@media only screen and (max-width: 1165px) {
-  html {
-    font-size: 11px;
-  }
-  .btn {
-    width: 290px;
-  }
-  .strelka {
-    left: 313px;
-    top: 269px;
-  }
-  .statistics {
-    width: 407px;
-  }
-  .statistics-item {
-    width: 125px;
-    height: 91px;
-    padding: 20px;
-  }
-  .statistics-item {
-    font-size: 20px;
-  }
-  .statistics-item p {
-    font-size: 13px;
-  }
+@media (max-width: 1200px) {
   .banner-img-man {
-    width: 125%;
+    right: -95px;
   }
   .banner-img-book {
-    width: 53%;
+    left: -160px;
   }
-}
-@media only screen and (max-width: 1000px) {
-  .banner-img-man {
-    width: 128%;
-    top: -129px;
-  }
-
-  .banner-img-book {
-    width: 56%;
-    top: 207px;
-    left: -62px;
+  .strelka-1 {
+    right: -240px;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  html {
-    font-size: 10px;
+@media (max-width: 992px) {
+  .intro {
+    flex-direction: column;
   }
-  .strelka {
-    top: 253px;
-  }
+
   .statistics {
     display: none;
-  }
-  .banner-img-man {
-    width: 121%;
-  }
-  .banner-img-book {
-    width: 50%;
-    top: 118px;
-  }
-}
-
-@media only screen and (max-width: 847px) {
-  .intro {
-    flex-wrap: wrap;
   }
 
   .life-hack_left-side {
     width: 100%;
   }
-
-  html {
-    font-size: 16px;
-  }
-
-  .btn {
-    width: 309px;
-  }
-
   .life-hack_right-side {
-    margin-top: 25px;
     width: 100%;
-    height: 824px;
+    height: 884px;
   }
 
-  .banner-img-man {
-    width: 95%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  .section-title {
+    font-size: 70px;
   }
+
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    width: 100%;
+    font-size: 41px;
+  }
+  .section-subtitle-2 span {
+    font-size: 45px;
+  }
+
   .banner-img-book {
-    top: 219px;
-    left: 469px;
+    left: 50px;
+  }
+  .btn {
+    width: 90%;
+    height: 60px;
+    font-size: 25px;
   }
 
   .strelka-1 {
@@ -312,97 +181,83 @@ body {
 
   .strelka-2 {
     display: block;
+    position: absolute;
+    top: -76px;
+    right: -35px;
+  }
+  .banner-img-book {
+    width: 374px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .life-hack_right-side {
+    display: none;
+  }
+
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 30px;
+  }
+
+  .section-subtitle-2 span {
+    font-size: 32px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .life-hack-section_breand{
+    padding-top: 25px;
+    padding-bottom: 17px;
+  }
+
+  .section-title{
+    font-size: 50px;
+  }
+
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 25px;
+  }
+
+  .section-subtitle-2 span {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 375px) {
+  .life-hack-section_breand{
+    width: 94px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+  }
+
+  .section-title{
+    font-size: 32px;
+  }
+
+  .section-subtitle-1,
+  .section-subtitle-2 {
+    font-size: 16px;
+  }
+
+  .section-subtitle-2 span {
+    font-size: 18px;
+  }
+  
+  .btn {
+    width: 309px;
+    height: 60px;
+    font-size: 17px;
+  }
+  .strelka-2 {
+    display: block;
+    position: absolute;
+    top: -56px;
+    right: -35px;
     width: 25px;
-    left: 313px;
-    top: 269px;
-  }
-
-  .strelka {
-    left: 400px;
-    top: 393px;
-  }
-}
-@media only screen and (max-width: 683px) {
-  html {
-    font-size: 13px;
-  }
-
-  .intro {
-    justify-content: space-between;
-  }
-
-  .life-hack_right-side {
-    height: 503px;
-  }
-  .banner-img-book {
-    top: 136px;
-    left: 316px;
-  }
-  .strelka {
-    left: 341px;
-    top: 317px;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-  html {
-    font-size: 12px;
-  }
-  .banner-img-book {
-    top: 108px;
-  }
-  .strelka {
-    top: 292px;
-  }
-}
-@media only screen and (max-width: 519px) {
-  html {
-    font-size: 11px;
-  }
-  .life-hack_right-side {
-    height: 503px;
-  }
-
-  .banner-img-book {
-    width: 44%;
-    top: 108px;
-  }
-  .strelka {
-    top: 292px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 10px;
-  }
-  .life-hack_right-side {
-    height: 405px;
-  }
-
-  .banner-img-book {
-    top: 107px;
-    left: 281px;
-  }
-  .strelka {
-    left: 383px;
-    top: 222px;
-  }
-}
-
-@media only screen and (max-width: 438px) {
-  html {
-    font-size: 9.5px;
-  }
-  .life-hack_right-side {
-    height: 370px;
-  }
-
-  .banner-img-book {
-    left: 245px;
-  }
-  .strelka {
-    left: 383px;
-    top: 222px;
-  }
+    height: 107px;
 }

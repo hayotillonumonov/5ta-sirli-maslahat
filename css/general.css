@@ -1,0 +1,62 @@
+
+:root {
+    --breand-color: #3cb27f;
+  }
+  
+  /*==> Fonts start <==*/
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.woff2"),
+      url("../fonts/Poppins-SemiBold.woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff2"),
+      url("../fonts/Poppins-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*==> /Fonts end <==*/
+  
+  /*==>  Main styles  <==*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .btn {
+    width: 343px;
+    height: 60px;
+    color: #fff;
+    font-size: 17px;
+    background: #fb4545;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s;
+    position: relative;
+  }
+  
+  .btn:hover {
+    background: #a12c2c;
+  }
+  

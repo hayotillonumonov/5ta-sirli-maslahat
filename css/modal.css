@@ -1,9 +1,6 @@
 .modal {
- 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  margin-top: 200px;
   z-index: 100;
   width: 935px;
   height: 458px;
@@ -62,7 +59,7 @@ label p {
   font-size: 14px;
 }
 
-input {
+.input {
   margin-bottom: 24px;
   padding: 14px 18px;
   width: 428px;
@@ -122,7 +119,23 @@ input[type="number"] {
   top: 0;
   display: none;
 }
-
+.cod{
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  width: 428px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #bed4da;
+  background: #f3f7f8;
+  display: flex;
+  outline: none;
+  border: none;
+}
+.cod input{
+  outline: none;
+  border: none;
+  background: #f3f7f8;
+}
 @media only screen and (max-width: 922px) {
   .modal {
     position: fixed;
@@ -194,7 +207,7 @@ input[type="number"] {
   }
 
   .right-side h1 {
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 12px;
   }
   
@@ -204,61 +217,3 @@ input[type="number"] {
     right: 350px;
   }
 }
-
-/* 
-@media only screen and (max-width: 375px) {
-  .right-side {
-    width: 100%;
-    background: #f4f4f4
-  }
-
-  .conty-code {
-    font-size: 15px;
-    bottom: -20px;
-    right: 283px;
-  }
-
-  input {
-    margin-bottom: 10px;
-    width: 98%;
-  }
-
-  .overlay {
-    display: none;
-  }
-  .right-side {
-    padding: 10px;
-  }
-  .right-side h1 {
-    font-size: 25px;
-  }
-
-  .right-side h1 span {
-    color: #3cb27f;
-  }
-
-  .right-side > p {
-    font-size: 14px;
-  }
-
-  .right-side > p span {
-    color: #3cb27f;
-    font-weight: 600;
-  }
-
-  form p {
-    margin-bottom: 16px;
-    font-weight: 400;
-  }
-
-  .modal-btn {
-    width: 100%;
-    margin-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 344px) {
-  .conty-code {
-    right: 260px;
-  }
-} */
